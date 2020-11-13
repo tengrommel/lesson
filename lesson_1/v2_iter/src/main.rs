@@ -1,3 +1,5 @@
+use std::thread::current;
+
 pub struct Stepper {
     curr: i32,
     step: i32,
@@ -25,13 +27,22 @@ fn main() {
             None => break,
         }
     }
-    let mut n = 0;
-    while n < 10 {
-        n += 1;
-        println!("Hello, {}!", n);
+    let mut st = Stepper{curr:2, step:4, max:15};
+    while let Some(n) = st.next(){
+        println!("while, {}!", n);
     }
-    for i in 0..10 {
+    let mut iter_stepper = Stepper{curr:2, step:4, max:15};
+    for i in iter_stepper {
         println!("for loop {}", i)
     }
+    // let mut n = 0;
+    // while n < 10 {
+    //     n += 1;
+    //     println!("Hello, {}!", n);
+    // }
+    // for i in 0..10 {
+    //     println!("for loop {}", i)
+    // }
+
     println!("All done");
 }

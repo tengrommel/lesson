@@ -13,7 +13,10 @@
     <cargoProject FILE="$PROJECT_DIR$/lesson_1/v2_iter/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f0968d9-8a4a-4109-8541-a7b1ea406408" name="Default Changelist" comment="" />
+    <list default="true" id="5f0968d9-8a4a-4109-8541-a7b1ea406408" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_1/v2_iter/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_1/v2_iter/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605259958311</updated>
       <workItem from="1605259959329" duration="7065000" />
-      <workItem from="1605270541076" duration="3024000" />
+      <workItem from="1605270541076" duration="4103000" />
     </task>
     <task id="LOCAL-00001" summary="迭代器">
       <created>1605272928154</created>
@@ -110,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605272928154</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="使用方式">
+      <created>1605275026055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605275026055</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,37 +128,38 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="迭代器" />
-    <option name="LAST_COMMIT_MESSAGE" value="迭代器" />
+    <MESSAGE value="使用方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用方式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1778" y="458" width="468" height="699" key="#com.intellij.ide.util.MemberChooser" timestamp="1605271372619">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1778" y="458" width="468" height="699" key="#com.intellij.ide.util.MemberChooser/0.28.2560.1412@0.28.2560.1412" timestamp="1605271372619" />
-    <state x="1017" y="198" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605272927992">
+    <state x="1017" y="198" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605275025994">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1017" y="198" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605272927992" />
+    <state x="1017" y="198" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605275025994" />
     <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl" timestamp="1605269079178">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl/0.28.2560.1412@0.28.2560.1412" timestamp="1605269079178" />
-    <state width="1214" height="223" key="GridCell.Tab.0.bottom" timestamp="1605270518620">
+    <state width="1204" height="290" key="GridCell.Tab.0.bottom" timestamp="1605275783538">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1214" height="223" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605270518620" />
-    <state width="1214" height="223" key="GridCell.Tab.0.center" timestamp="1605270518620">
+    <state width="1204" height="290" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605275783538" />
+    <state width="1204" height="290" key="GridCell.Tab.0.center" timestamp="1605275783537">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1214" height="223" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605270518620" />
-    <state width="1214" height="223" key="GridCell.Tab.0.left" timestamp="1605270518619">
+    <state width="1204" height="290" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605275783537" />
+    <state width="1204" height="290" key="GridCell.Tab.0.left" timestamp="1605275783537">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1214" height="223" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605270518619" />
-    <state width="1214" height="223" key="GridCell.Tab.0.right" timestamp="1605270518620">
+    <state width="1204" height="290" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605275783537" />
+    <state width="1204" height="290" key="GridCell.Tab.0.right" timestamp="1605275783538">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1214" height="223" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605270518620" />
+    <state width="1204" height="290" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605275783538" />
     <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog" timestamp="1605274740051">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
