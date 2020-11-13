@@ -18,6 +18,13 @@ impl Iterator for Stepper {
 
 
 fn main() {
+    let mut st = Stepper{curr:2, step:3, max:15};
+    loop {
+        match st.next() {
+            Some(v) => println!("loop {}", v),
+            None => break,
+        }
+    }
     let mut n = 0;
     while n < 10 {
         n += 1;
