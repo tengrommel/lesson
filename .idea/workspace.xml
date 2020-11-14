@@ -18,7 +18,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0968d9-8a4a-4109-8541-a7b1ea406408" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_3/v2_heap_object/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson_3/v2_heap_object/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson_3/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/readme.md" afterDir="false" />
     </list>
@@ -59,7 +60,7 @@
       <recent name="$PROJECT_DIR$/lesson_1/v1_result" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run v1_pointer">
+  <component name="RunManager" selected="Cargo.Run v2_heap_object">
     <configuration name="Run ex" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package ex --bin ex" />
@@ -84,13 +85,13 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run v1_result" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Run v2_heap_object" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package v1_result --bin v1_result" />
+      <option name="command" value="run --package v2_heap_object --bin v2_heap_object" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/lesson_1/v1_result" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/lesson_3/v2_heap_object" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
@@ -127,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run v2_heap_object" />
         <item itemvalue="Cargo.Run v1_pointer" />
         <item itemvalue="Cargo.Run v2_mutability" />
         <item itemvalue="Cargo.Run ex" />
         <item itemvalue="Cargo.Run v2_iter" />
-        <item itemvalue="Cargo.Run v1_result" />
       </list>
     </recent_temporary>
   </component>
@@ -151,7 +152,7 @@
       <workItem from="1605270541076" duration="5077000" />
       <workItem from="1605327603179" duration="8033000" />
       <workItem from="1605344752668" duration="22000" />
-      <workItem from="1605357295892" duration="2219000" />
+      <workItem from="1605357295892" duration="5269000" />
     </task>
     <task id="LOCAL-00001" summary="迭代器">
       <created>1605272928154</created>
@@ -223,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605358687421</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="heap">
+      <created>1605359562342</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605359562342</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +247,8 @@
     <MESSAGE value="a" />
     <MESSAGE value="&amp;self" />
     <MESSAGE value="pointers" />
-    <option name="LAST_COMMIT_MESSAGE" value="pointers" />
+    <MESSAGE value="heap" />
+    <option name="LAST_COMMIT_MESSAGE" value="heap" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="324" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605341978828">
@@ -250,30 +259,30 @@
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1778" y="458" width="468" height="699" key="#com.intellij.ide.util.MemberChooser/0.28.2560.1412@0.28.2560.1412" timestamp="1605271372619" />
-    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605358687374">
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605359562271">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605358687374" />
-    <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl" timestamp="1605276784898">
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605359562271" />
+    <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl" timestamp="1605361414221">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl/0.28.2560.1412@0.28.2560.1412" timestamp="1605276784898" />
-    <state width="1222" height="262" key="GridCell.Tab.0.bottom" timestamp="1605358762545">
+    <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl/0.28.2560.1412@0.28.2560.1412" timestamp="1605361414221" />
+    <state width="1366" height="447" key="GridCell.Tab.0.bottom" timestamp="1605362007493">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762545" />
-    <state width="1222" height="262" key="GridCell.Tab.0.center" timestamp="1605358762545">
+    <state width="1366" height="447" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605362007493" />
+    <state width="1366" height="447" key="GridCell.Tab.0.center" timestamp="1605362007493">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762545" />
-    <state width="1222" height="262" key="GridCell.Tab.0.left" timestamp="1605358762544">
+    <state width="1366" height="447" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605362007493" />
+    <state width="1366" height="447" key="GridCell.Tab.0.left" timestamp="1605362007492">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762544" />
-    <state width="1222" height="262" key="GridCell.Tab.0.right" timestamp="1605358762545">
+    <state width="1366" height="447" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605362007492" />
+    <state width="1366" height="447" key="GridCell.Tab.0.right" timestamp="1605362007493">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762545" />
+    <state width="1366" height="447" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605362007493" />
     <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog" timestamp="1605337984381">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
