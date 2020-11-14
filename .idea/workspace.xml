@@ -13,10 +13,12 @@
     <cargoProject FILE="$PROJECT_DIR$/lesson_1/v2_iter/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/lesson_2/ex/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/lesson_2/v2_mutability/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/lesson_3/v1_pointer/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0968d9-8a4a-4109-8541-a7b1ea406408" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_3/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_3/v1_pointer/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/v1_pointer/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,7 @@
       <recent name="$PROJECT_DIR$/lesson_1/v1_result" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run v2_mutability">
+  <component name="RunManager" selected="Cargo.Run v1_pointer">
     <configuration name="Run ex" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package ex --bin ex" />
@@ -63,6 +65,18 @@
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/lesson_2/ex" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run v1_pointer" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="run --package v1_pointer --bin v1_pointer" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/lesson_3/v1_pointer" />
       <envs />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
@@ -111,6 +125,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Run v1_pointer" />
         <item itemvalue="Cargo.Run v2_mutability" />
         <item itemvalue="Cargo.Run ex" />
         <item itemvalue="Cargo.Run v2_iter" />
@@ -134,6 +149,7 @@
       <workItem from="1605270541076" duration="5077000" />
       <workItem from="1605327603179" duration="8033000" />
       <workItem from="1605344752668" duration="22000" />
+      <workItem from="1605357295892" duration="432000" />
     </task>
     <task id="LOCAL-00001" summary="迭代器">
       <created>1605272928154</created>
@@ -184,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605344390000</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="pointers">
+      <created>1605357473026</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605357473026</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,7 +221,8 @@
     <MESSAGE value="mut" />
     <MESSAGE value="copy clone" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="pointers" />
+    <option name="LAST_COMMIT_MESSAGE" value="pointers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="324" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605341978828">
@@ -209,10 +233,10 @@
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1778" y="458" width="468" height="699" key="#com.intellij.ide.util.MemberChooser/0.28.2560.1412@0.28.2560.1412" timestamp="1605271372619" />
-    <state x="1017" y="198" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605344389958">
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605357472920">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1017" y="198" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605344389958" />
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605357472920" />
     <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl" timestamp="1605276784898">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
@@ -237,10 +261,10 @@
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog/0.28.2560.1412@0.28.2560.1412" timestamp="1605337984381" />
-    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2" timestamp="1605344394347">
+    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2" timestamp="1605357477533">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2/0.28.2560.1412@0.28.2560.1412" timestamp="1605344394347" />
+    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2/0.28.2560.1412@0.28.2560.1412" timestamp="1605357477533" />
     <state x="234" y="67" width="963" height="1138" key="dock-window-1" timestamp="1605267759685">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
