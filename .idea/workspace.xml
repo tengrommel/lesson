@@ -14,11 +14,13 @@
     <cargoProject FILE="$PROJECT_DIR$/lesson_2/ex/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/lesson_2/v2_mutability/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/lesson_3/v1_pointer/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/lesson_3/v2_heap_object/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0968d9-8a4a-4109-8541-a7b1ea406408" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_3/v1_pointer/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/v1_pointer/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_3/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_3/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +151,7 @@
       <workItem from="1605270541076" duration="5077000" />
       <workItem from="1605327603179" duration="8033000" />
       <workItem from="1605344752668" duration="22000" />
-      <workItem from="1605357295892" duration="1382000" />
+      <workItem from="1605357295892" duration="2219000" />
     </task>
     <task id="LOCAL-00001" summary="迭代器">
       <created>1605272928154</created>
@@ -214,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605357972428</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="pointers">
+      <created>1605358687421</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605358687421</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,9 +237,9 @@
     <MESSAGE value="mut" />
     <MESSAGE value="copy clone" />
     <MESSAGE value="a" />
-    <MESSAGE value="pointers" />
     <MESSAGE value="&amp;self" />
-    <option name="LAST_COMMIT_MESSAGE" value="&amp;self" />
+    <MESSAGE value="pointers" />
+    <option name="LAST_COMMIT_MESSAGE" value="pointers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="324" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605341978828">
@@ -241,38 +250,38 @@
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1778" y="458" width="468" height="699" key="#com.intellij.ide.util.MemberChooser/0.28.2560.1412@0.28.2560.1412" timestamp="1605271372619" />
-    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605357972382">
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605358687374">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605357972382" />
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605358687374" />
     <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl" timestamp="1605276784898">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl/0.28.2560.1412@0.28.2560.1412" timestamp="1605276784898" />
-    <state width="1222" height="262" key="GridCell.Tab.0.bottom" timestamp="1605358468704">
+    <state width="1222" height="262" key="GridCell.Tab.0.bottom" timestamp="1605358762545">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605358468704" />
-    <state width="1222" height="262" key="GridCell.Tab.0.center" timestamp="1605358468704">
+    <state width="1222" height="262" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762545" />
+    <state width="1222" height="262" key="GridCell.Tab.0.center" timestamp="1605358762545">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605358468704" />
-    <state width="1222" height="262" key="GridCell.Tab.0.left" timestamp="1605358468704">
+    <state width="1222" height="262" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762545" />
+    <state width="1222" height="262" key="GridCell.Tab.0.left" timestamp="1605358762544">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605358468704" />
-    <state width="1222" height="262" key="GridCell.Tab.0.right" timestamp="1605358468704">
+    <state width="1222" height="262" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762544" />
+    <state width="1222" height="262" key="GridCell.Tab.0.right" timestamp="1605358762545">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1222" height="262" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605358468704" />
+    <state width="1222" height="262" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605358762545" />
     <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog" timestamp="1605337984381">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog/0.28.2560.1412@0.28.2560.1412" timestamp="1605337984381" />
-    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2" timestamp="1605357976382">
+    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2" timestamp="1605358690672">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2/0.28.2560.1412@0.28.2560.1412" timestamp="1605357976382" />
+    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2/0.28.2560.1412@0.28.2560.1412" timestamp="1605358690672" />
     <state x="234" y="67" width="963" height="1138" key="dock-window-1" timestamp="1605267759685">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>

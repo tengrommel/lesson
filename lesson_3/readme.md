@@ -4,3 +4,5 @@
 - mut self
 - &self
 - &mut self
+
+# Own Memory on the Heap with Box, String, Vecs
