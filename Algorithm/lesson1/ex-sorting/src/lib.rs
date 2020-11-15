@@ -1,13 +1,20 @@
-pub fn bubble_sort<T: PartialOrd>(v: &mut [T]) {
-    for _ in 0..v.len() {
-        for i in 0..v.len()-1{
+use std::fmt::Debug;
+
+pub fn bubble_sort<T: PartialOrd + Debug>(v: &mut [T]) {
+    for p in 0..v.len() {
+        println!("{:?}", v);
+        let mut sorted = true;
+        for i in 0..(v.len()-1) - p{
             if v[i] > v[i+1] {
-                v.swap(i, i+1)
+                v.swap(i, i+1);
+                sorted = false;
             }
+        }
+        if sorted {
+            return;
         }
     }
 }
-
 
 #[cfg(test)]
 mod tests {

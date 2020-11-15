@@ -19,11 +19,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f0968d9-8a4a-4109-8541-a7b1ea406408" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/src/lib.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Algorithm/lesson1/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/lesson1/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/lesson1/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,17 +60,10 @@
       <recent name="$PROJECT_DIR$/lesson_1/v1_result" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test lib::tests">
-    <configuration name="Run ex" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package ex --bin ex" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/lesson_2/ex" />
-      <envs />
+  <component name="RunManager" selected="Cargo.Test tests::test_bubble_sort">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Run v1_pointer" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
@@ -123,18 +114,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Test tests::test_bubble_sort" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ex-sorting --lib tests::test_bubble_sort -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/Algorithm/lesson1/ex-sorting" />
+      <envs />
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test tests::test_bubble_sort" />
         <item itemvalue="Cargo.Test lib::tests" />
         <item itemvalue="Cargo.Run v2_heap_object" />
         <item itemvalue="Cargo.Run v1_pointer" />
         <item itemvalue="Cargo.Run v2_mutability" />
-        <item itemvalue="Cargo.Run ex" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +155,8 @@
       <workItem from="1605357295892" duration="5444000" />
       <workItem from="1605363709087" duration="12000" />
       <workItem from="1605363833474" duration="155000" />
-      <workItem from="1605370116385" duration="816000" />
+      <workItem from="1605370116385" duration="1416000" />
+      <workItem from="1605418045119" duration="1472000" />
     </task>
     <task id="LOCAL-00001" summary="迭代器">
       <created>1605272928154</created>
@@ -243,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605363161927</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="冒泡">
+      <created>1605371100739</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605371100739</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +267,8 @@
     <MESSAGE value="pointers" />
     <MESSAGE value="heap" />
     <MESSAGE value="string" />
-    <option name="LAST_COMMIT_MESSAGE" value="string" />
+    <MESSAGE value="冒泡" />
+    <option name="LAST_COMMIT_MESSAGE" value="冒泡" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="324" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605341978828">
@@ -272,38 +279,38 @@
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1778" y="458" width="468" height="699" key="#com.intellij.ide.util.MemberChooser/0.28.2560.1412@0.28.2560.1412" timestamp="1605271372619" />
-    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605363161879">
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2" timestamp="1605371100659">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605363161879" />
+    <state x="211" y="190" width="1080" height="1239" key="CommitChangelistDialog2/0.28.2560.1412@0.28.2560.1412" timestamp="1605371100659" />
     <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl" timestamp="1605361414221">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
     <state x="1314" y="344" width="530" height="600" key="FileChooserDialogImpl/0.28.2560.1412@0.28.2560.1412" timestamp="1605361414221" />
-    <state width="1366" height="447" key="GridCell.Tab.0.bottom" timestamp="1605363327633">
+    <state width="1046" height="447" key="GridCell.Tab.0.bottom" timestamp="1605371531806">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1366" height="447" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605363327633" />
-    <state width="1366" height="447" key="GridCell.Tab.0.center" timestamp="1605363327632">
+    <state width="1046" height="447" key="GridCell.Tab.0.bottom/0.28.2560.1412@0.28.2560.1412" timestamp="1605371531806" />
+    <state width="1046" height="447" key="GridCell.Tab.0.center" timestamp="1605371531805">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1366" height="447" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605363327632" />
-    <state width="1366" height="447" key="GridCell.Tab.0.left" timestamp="1605363327632">
+    <state width="1046" height="447" key="GridCell.Tab.0.center/0.28.2560.1412@0.28.2560.1412" timestamp="1605371531805" />
+    <state width="1046" height="447" key="GridCell.Tab.0.left" timestamp="1605371531805">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1366" height="447" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605363327632" />
-    <state width="1366" height="447" key="GridCell.Tab.0.right" timestamp="1605363327633">
+    <state width="1046" height="447" key="GridCell.Tab.0.left/0.28.2560.1412@0.28.2560.1412" timestamp="1605371531805" />
+    <state width="1046" height="447" key="GridCell.Tab.0.right" timestamp="1605371531806">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state width="1366" height="447" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605363327633" />
-    <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog" timestamp="1605337984381">
+    <state width="1046" height="447" key="GridCell.Tab.0.right/0.28.2560.1412@0.28.2560.1412" timestamp="1605371531806" />
+    <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog" timestamp="1605418073758">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog/0.28.2560.1412@0.28.2560.1412" timestamp="1605337984381" />
-    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2" timestamp="1605363835936">
+    <state x="1154" y="286" width="1030" height="650" key="IDE.errors.dialog/0.28.2560.1412@0.28.2560.1412" timestamp="1605418073758" />
+    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2" timestamp="1605371103983">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
-    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2/0.28.2560.1412@0.28.2560.1412" timestamp="1605363835936" />
+    <state x="1447" y="407" width="1000" height="666" key="Vcs.Push.Dialog.v2/0.28.2560.1412@0.28.2560.1412" timestamp="1605371103983" />
     <state x="234" y="67" width="963" height="1138" key="dock-window-1" timestamp="1605267759685">
       <screen x="0" y="28" width="2560" height="1412" />
     </state>
