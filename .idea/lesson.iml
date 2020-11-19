@@ -2,20 +2,8 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/lesson_1/v1_result/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_1/v2_iter/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_2/v1_ex/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_2/v2_mutability/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_3/v1_pointer/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_3/v2_heap_object/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Algorithm/lesson1/ex-sorting/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Algorithm/lesson1/ex-sorting/target" />
-      <excludeFolder url="file://$MODULE_DIR$/lesson_1/v1_result/target" />
-      <excludeFolder url="file://$MODULE_DIR$/lesson_1/v2_iter/target" />
-      <excludeFolder url="file://$MODULE_DIR$/lesson_2/v1_ex/target" />
-      <excludeFolder url="file://$MODULE_DIR$/lesson_2/v2_mutability/target" />
-      <excludeFolder url="file://$MODULE_DIR$/lesson_3/v1_pointer/target" />
-      <excludeFolder url="file://$MODULE_DIR$/lesson_3/v2_heap_object/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

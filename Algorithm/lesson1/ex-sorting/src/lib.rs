@@ -24,7 +24,7 @@ pub fn merge_sort<T: PartialOrd + Debug>(mut v: Vec<T>) -> Vec<T> {
         return v;
     }
     let mut res = Vec::with_capacity(v.len());
-    let mut b = v.split_off(v.len()/2);
+    let b = v.split_off(v.len()/2);
     let a = merge_sort(v);
     let b = merge_sort(b);
     // bring them together again add whichever is lowest the front of a or the front of b
@@ -61,6 +61,34 @@ pub fn merge_sort<T: PartialOrd + Debug>(mut v: Vec<T>) -> Vec<T> {
     }
 }
 
+// Move first element to the correct place
+// Everything lower should be before it,
+// everything higher should be after it
+// return it's location
+pub fn pivot<T: PartialOrd>(v: &mut [T]) -> usize {
+    let mut p = 0;
+    for i in 1..v.len() {
+        if v[i] < v[p] {
+            // move our pivot forward 1, and put this element before it
+            v.swap(p+1, i);
+            v.swap(p, p+1);
+            p += 1
+        }
+    }
+    p
+}
+
+pub fn quick_sort<T: PartialOrd + Debug>(v: &mut [T]) {
+    if v.len() <= 1 {
+        return;
+    }
+    let p = pivot(v);
+    println!("{:?}", v);
+    let (a, b) = v.split_at_mut(p);
+    quick_sort(a);
+    quick_sort(&mut b[1..]);
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -76,5 +104,21 @@ mod tests {
         let v = vec![4, 6, 1, 8, 11, 13, 3];
         let v = merge_sort(v);
         assert_eq!(v, vec![1, 3, 4, 6, 8, 11, 13]);
+    }
+
+    #[test]
+    fn test_pivot() {
+        let mut v = vec![4, 6, 1, 19, 8, 11, 13, 3];
+        let p = pivot(&mut v);
+        for x in 0..v.len() {
+            assert_eq!(v[x] < v[p], x < p);
+        }
+    }
+
+    #[test]
+    fn test_quick_sort() {
+        let mut v = vec![4, 6, 1, 8, 11, 13, 3];
+        quick_sort(&mut v);
+        assert_eq!(v, vec![1, 3, 4, 6, 8, 11, 13])
     }
 }
