@@ -1,3 +1,5 @@
+mod rand;
+
 use std::fmt::Debug;
 
 pub fn bubble_sort<T: PartialOrd + Debug>(v: &mut [T]) {
@@ -66,7 +68,9 @@ pub fn merge_sort<T: PartialOrd + Debug>(mut v: Vec<T>) -> Vec<T> {
 // everything higher should be after it
 // return it's location
 pub fn pivot<T: PartialOrd>(v: &mut [T]) -> usize {
-    let mut p = 0;
+    let mut p = rand::read(v.len());
+    v.swap(p, 0);
+    p = 0;
     for i in 1..v.len() {
         if v[i] < v[p] {
             // move our pivot forward 1, and put this element before it
