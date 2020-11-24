@@ -21,20 +21,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c50d668-a41d-493f-88b5-b60094abfd60" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lang/ch2/arc_ex/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/arc_ex/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/channel_ex/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/channel_ex/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/mutex_ex/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/mutex_ex/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/thread_ex1/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/thread_ex1/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/thread_ex2/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lang/ch2/thread_ex2/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/lesson.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lesson.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/ch2/func/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/lang/ch2/func/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/lang/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/lesson1/ex-sorting/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm/lesson1/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithm/lesson1/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +62,7 @@
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Cargo.Run arc_ex">
+  <component name="RunManager" selected="Cargo.Test tests::test_quick_sort_rayon">
     <configuration name="Run arc_ex" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package arc_ex --bin arc_ex" />
@@ -109,18 +99,6 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run thread_ex1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="run --package thread_ex1 --bin thread_ex1" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/lang/ch2/thread_ex1" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Run thread_ex2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package thread_ex2 --bin thread_ex2" />
@@ -133,6 +111,18 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test tests::test_quick_sort_rayon" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package ex-sorting --lib tests::test_quick_sort_rayon -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/Algorithm/lesson1/ex-sorting" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -140,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test tests::test_quick_sort_rayon" />
         <item itemvalue="Cargo.Run arc_ex" />
         <item itemvalue="Cargo.Run mutex_ex" />
         <item itemvalue="Cargo.Run channel_ex" />
         <item itemvalue="Cargo.Run thread_ex2" />
-        <item itemvalue="Cargo.Run thread_ex1" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +162,7 @@
       <workItem from="1605924801831" duration="19609000" />
       <workItem from="1606021772435" duration="23572000" />
       <workItem from="1606103053697" duration="19130000" />
-      <workItem from="1606191341875" duration="7269000" />
+      <workItem from="1606191341875" duration="10168000" />
     </task>
     <task id="LOCAL-00001" summary="lib">
       <created>1605783386194</created>
@@ -209,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606144447678</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sync">
+      <created>1606205308296</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606205308297</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,50 +217,51 @@
     <MESSAGE value="rands" />
     <MESSAGE value="HELLO" />
     <MESSAGE value="thread" />
-    <option name="LAST_COMMIT_MESSAGE" value="thread" />
+    <MESSAGE value="sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="sync" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="785" y="0" key="CommitChangelistDialog2" timestamp="1606144446578">
+    <state x="785" y="0" key="CommitChangelistDialog2" timestamp="1606205307172">
       <screen x="0" y="0" width="2137" height="1162" />
     </state>
     <state x="589" y="0" key="CommitChangelistDialog2/0.0.1603.862/-370.-1440.2137.1202@0.0.1603.862" timestamp="1605802778623" />
-    <state x="785" y="0" key="CommitChangelistDialog2/0.0.2137.1162@0.0.2137.1162" timestamp="1606144446578" />
+    <state x="785" y="0" key="CommitChangelistDialog2/0.0.2137.1162@0.0.2137.1162" timestamp="1606205307172" />
     <state x="1068" y="136" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1605783385268" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1605771421191">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-370.-1440.2560.1440@0.0.1536.824" timestamp="1605771421191" />
-    <state width="861" height="293" key="GridCell.Tab.0.bottom" timestamp="1606201160606">
+    <state width="861" height="285" key="GridCell.Tab.0.bottom" timestamp="1606209061608">
       <screen x="0" y="0" width="2137" height="1162" />
     </state>
     <state width="2501" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/-370.-1440.2560.1440@-370.-1440.2560.1440" timestamp="1605780955773" />
     <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824/-370.-1440.2560.1440@0.0.1536.824" timestamp="1605713759407" />
     <state width="1126" height="221" key="GridCell.Tab.0.bottom/0.0.1603.862/-370.-1440.2137.1202@0.0.1603.862" timestamp="1605802818000" />
-    <state width="861" height="293" key="GridCell.Tab.0.bottom/0.0.2137.1162@0.0.2137.1162" timestamp="1606201160606" />
+    <state width="861" height="285" key="GridCell.Tab.0.bottom/0.0.2137.1162@0.0.2137.1162" timestamp="1606209061608" />
     <state width="2501" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1605785785343" />
-    <state width="861" height="293" key="GridCell.Tab.0.center" timestamp="1606201160606">
+    <state width="861" height="285" key="GridCell.Tab.0.center" timestamp="1606209061608">
       <screen x="0" y="0" width="2137" height="1162" />
     </state>
     <state width="2501" height="282" key="GridCell.Tab.0.center/0.0.1536.824/-370.-1440.2560.1440@-370.-1440.2560.1440" timestamp="1605780955773" />
     <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824/-370.-1440.2560.1440@0.0.1536.824" timestamp="1605713759407" />
     <state width="1126" height="221" key="GridCell.Tab.0.center/0.0.1603.862/-370.-1440.2137.1202@0.0.1603.862" timestamp="1605802818000" />
-    <state width="861" height="293" key="GridCell.Tab.0.center/0.0.2137.1162@0.0.2137.1162" timestamp="1606201160606" />
+    <state width="861" height="285" key="GridCell.Tab.0.center/0.0.2137.1162@0.0.2137.1162" timestamp="1606209061608" />
     <state width="2501" height="282" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1605785785343" />
-    <state width="861" height="293" key="GridCell.Tab.0.left" timestamp="1606201160606">
+    <state width="861" height="285" key="GridCell.Tab.0.left" timestamp="1606209061608">
       <screen x="0" y="0" width="2137" height="1162" />
     </state>
     <state width="2501" height="282" key="GridCell.Tab.0.left/0.0.1536.824/-370.-1440.2560.1440@-370.-1440.2560.1440" timestamp="1605780955773" />
     <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824/-370.-1440.2560.1440@0.0.1536.824" timestamp="1605713759407" />
     <state width="1126" height="221" key="GridCell.Tab.0.left/0.0.1603.862/-370.-1440.2137.1202@0.0.1603.862" timestamp="1605802818000" />
-    <state width="861" height="293" key="GridCell.Tab.0.left/0.0.2137.1162@0.0.2137.1162" timestamp="1606201160606" />
+    <state width="861" height="285" key="GridCell.Tab.0.left/0.0.2137.1162@0.0.2137.1162" timestamp="1606209061608" />
     <state width="2501" height="282" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1605785785343" />
-    <state width="861" height="293" key="GridCell.Tab.0.right" timestamp="1606201160606">
+    <state width="861" height="285" key="GridCell.Tab.0.right" timestamp="1606209061608">
       <screen x="0" y="0" width="2137" height="1162" />
     </state>
     <state width="2501" height="282" key="GridCell.Tab.0.right/0.0.1536.824/-370.-1440.2560.1440@-370.-1440.2560.1440" timestamp="1605780955773" />
     <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824/-370.-1440.2560.1440@0.0.1536.824" timestamp="1605713759407" />
     <state width="1126" height="221" key="GridCell.Tab.0.right/0.0.1603.862/-370.-1440.2137.1202@0.0.1603.862" timestamp="1605802818000" />
-    <state width="861" height="293" key="GridCell.Tab.0.right/0.0.2137.1162@0.0.2137.1162" timestamp="1606201160606" />
+    <state width="861" height="285" key="GridCell.Tab.0.right/0.0.2137.1162@0.0.2137.1162" timestamp="1606209061608" />
     <state width="2501" height="282" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1605785785343" />
     <state x="745" y="360" key="IDE.errors.dialog" timestamp="1606199114939">
       <screen x="0" y="0" width="2137" height="1162" />
