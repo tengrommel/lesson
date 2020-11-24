@@ -6,10 +6,20 @@
       <sourceFolder url="file://$MODULE_DIR$/lang/ch1/hello_world/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lang/ch1/collection/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lang/ch2/func/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lang/ch2/thread_ex1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lang/ch2/thread_ex2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lang/ch2/channel_ex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lang/ch2/mutex_ex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lang/ch2/arc_ex/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Algorithm/lesson1/ex-sorting/target" />
       <excludeFolder url="file://$MODULE_DIR$/lang/ch1/collection/target" />
       <excludeFolder url="file://$MODULE_DIR$/lang/ch1/hello_world/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lang/ch2/arc_ex/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lang/ch2/channel_ex/target" />
       <excludeFolder url="file://$MODULE_DIR$/lang/ch2/func/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lang/ch2/mutex_ex/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lang/ch2/thread_ex1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/lang/ch2/thread_ex2/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -690,3 +690,81 @@ In most current operating systems, an executed program's code is run in a proces
 Splitting the computation in your program into multiple threads can improve performance because the program does multiple tasks at the same time, but it also adds complexity. Because threads can run simultaneously, there's no inherent guarantee about the order in which parts of your code on different threads will run.
 
 *thread::spawn(**closure containing code we want in another thread**)*
+
+        thread::spawn(||{
+            for i in 1..10 {
+                println!("hi number {} from the spawned thread!", i);
+                thread::sleep(Duration::from_millis(1));
+            }
+        });
+    
+        for i in 1..5 {
+            println!("hi number {} from the main thread!", i);
+            thread::sleep(Duration::from_millis(1));
+        }
+ 当主线程退出 子线程中断操作
+ 
+ How can we solve the problem of the spawned thread not finishing?
+ 
+        let handle = thread::spawn(||{
+            for i in 1..10 {
+                println!("hi number {} from the spawned thread!", i);
+                thread::sleep(Duration::from_millis(1));
+            }
+        });
+    
+        for i in 1..5 {
+            println!("hi number {} from the main thread!", i);
+            thread::sleep(Duration::from_millis(1));
+        }
+        handle.join().unwrap();
+
+# 'Move' keyword - Force a closure to take ownership of the values it uses
+
+# How do we pass data between threads in Rust? --Channels
+
+let (tx, rx) = mpsc::channel()
+
+Measures Rust takes to increase thread safety -- Receiver takes ownership of data that is sent(Don't forget the bank example!)
+
+    let tx1 = mpsc::Sender::clone(&tx);
+ # Shared State Concurrency
+ > Shared memory concurrency is like multiple ownership: multiple threads can access the same memory location at the same time
+
+# IMPORTANT
+> Three steps take place when incrementing a variable
+
+- Thread reads current value of variable
+- Thread increments this value
+- Thread writes the value to the variable
+
+# Mutex
+- Mutex is short for mutual exclusion
+- Mutexes solve our previous issue by only allowing one thread to access the data at any given time
+- To access the data that is mutex, the thread must first ask for he mutex's lock
+- The lock is a data structure that keeps track of who currently has exclusive access to the data
+- You must attempt to acquire the lock before using the data
+ 
+- When you finish using the data that the mutex protects, you must unlock the mutex so other threads can acquire the lock
+
+
+    let m = Mutex::new(5);
+    {
+        let mut num = m.lock().unwrap();
+        *num = 6;
+    }
+    println!("m = {:?}", m);
+
+mutex 特性
+- Mutex<T> is a smart pointer!
+- To be more accurate, the call to lock returns a smart pointer called MutexGuard, wrapped in a LockResult that we handle with our call to unwrap
+- The MutexGuard can be dereferenced to point to our data
+- MutexGuard also has a drop implementation that releases the lock once MutexGuard goes out of scope
+
+# Using Mutex w/Multiple Threads - Atomic Reference Counting w/Arc<T>
+- What we're going to talk about now is more Rust specific, however to use Mutexes between multiple threads you need to do more than just the code you saw in the previous example
+- We have to use the Arc<T> smart pointer type
+- Arc<T> is an atomically reference counted type
+- We use Arc<T> for additional thread safety - with the cost of some performance lost
+    - We only need to use Arc<T> for multi-threaded programs
+
