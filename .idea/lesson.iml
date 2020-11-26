@@ -11,7 +11,11 @@
       <sourceFolder url="file://$MODULE_DIR$/lang/ch2/channel_ex/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lang/ch2/mutex_ex/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lang/ch2/arc_ex/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithm/lesson2/LinkedList/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Algorithm/lesson2/double_linkedlist/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/Algorithm/lesson1/ex-sorting/target" />
+      <excludeFolder url="file://$MODULE_DIR$/Algorithm/lesson2/LinkedList/target" />
+      <excludeFolder url="file://$MODULE_DIR$/Algorithm/lesson2/double_linkedlist/target" />
       <excludeFolder url="file://$MODULE_DIR$/lang/ch1/collection/target" />
       <excludeFolder url="file://$MODULE_DIR$/lang/ch1/hello_world/target" />
       <excludeFolder url="file://$MODULE_DIR$/lang/ch2/arc_ex/target" />
